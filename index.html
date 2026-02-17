@@ -45,7 +45,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:13px;heigh
 @keyframes pu{0%,100%{opacity:1}50%{opacity:.3}}
 .mw{position:relative;overflow:hidden}
 #map{width:100%;height:100%;background:var(--bg)}
-.badge{position:absolute;top:14px;left:14px;z-index:800;background:rgba(17,21,32,.92);backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:var(--r);padding:8px 14px;display:none;flex-direction:column;gap:1px}
+.badge{position:absolute;top:14px;right:14px;z-index:800;background:rgba(17,21,32,.92);backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:var(--r);padding:8px 14px;display:none;flex-direction:column;gap:1px}
 .badge.on{display:flex}
 .badge .b1{font-family:var(--m);font-size:14px;font-weight:500}
 .badge .b2{font-family:var(--m);font-size:9px;color:var(--t3)}
@@ -154,7 +154,7 @@ const pc={};
 const map=L.map('map',{
   crs: L.CRS.EPSG4326,
   center:[20,0],
-  zoom:1,
+  zoom:2,
   minZoom:0,
   maxZoom:6,
   maxBounds:[[-90,-200],[90,200]],
